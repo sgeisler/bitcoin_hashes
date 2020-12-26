@@ -138,7 +138,7 @@ pub trait Hash: Copy + Clone + PartialEq + Eq + Default + PartialOrd + Ord +
 }
 
 #[cfg(test)]
-mod test {
+mod tests {
     use Hash;
     hash_newtype!(TestNewtype, ::sha256d::Hash, 32, doc="A test newtype");
     hash_newtype!(TestNewtype2, ::sha256d::Hash, 32, doc="A test newtype");
